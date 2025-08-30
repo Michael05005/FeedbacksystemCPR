@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PA_CPR_UI.InstructionVideoPage"
+             Title="Instruction Video">
+    <VerticalStackLayout>
+        <Label 
+            Text="No need to watch the video in a CPR-related Emergency! There will be Instructions along the way."
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Label 
+            Text="Instruction-Video:"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+    </VerticalStackLayout>
+</ContentPage>

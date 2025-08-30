@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PA_CPR_UI.PrepareSmartphonePage"
+             Title="PrepareSmartphonePage"
+             Shell.NavBarIsVisible="False">
+
+
+    <ScrollView>
+        <VerticalStackLayout Padding="15" Spacing="5">
+            <Button 
+                Text="Back"
+                Clicked="OnPrepareSmartphonePageBackButtonClicked"
+                BackgroundColor="Purple"
+                TextColor="White"
+                CornerRadius="8"
+                HeightRequest="40"
+                WidthRequest="75"
+                HorizontalOptions="Start"
+                VerticalOptions="Start"
+                Margin="0"/>
+            <Label
+                Text="Prepare CPR"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center"
+                FontSize="22"
+                FontAttributes="Bold"/>
+            <Label
+                Text="Please turn your smartphone upside down and place it in the center of the chest as shown in the picture:"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center"
+                FontSize="20"/>
+            <Image
+                Source="smartphone_placement2.png" 
+                HeightRequest="350" 
+                HorizontalOptions="Center"
+                Margin="0,10,0,0"/>
+            <Button 
+                Text="Continue!"
+                Clicked="OnCPRButton2Clicked"
+                BackgroundColor="Purple"
+                FontSize="22"
+                TextColor="White"
+                CornerRadius="8"
+                HeightRequest="75"
+                WidthRequest="300"
+                HorizontalOptions="Center" 
+                Rotation="180"
+                Margin="0,30,0,0"/>
+        </VerticalStackLayout>
+    </ScrollView>
+
+
+
+
+</ContentPage>

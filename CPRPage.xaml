@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PA_CPR_UI.CPRPage"
+             Title="CPRPage"
+             Shell.NavBarIsVisible="False">
+
+
+
+    <Grid ColumnDefinitions="Auto,*,Auto">
+        
+        <!-- Back Button (right Column) -->
+        <Button 
+            Text="Back"
+            Clicked="OnCPRPageBackButtonClicked"
+            BackgroundColor="Purple"
+            TextColor="White"
+            CornerRadius="8"
+            HeightRequest="40"
+            WidthRequest="75"
+            HorizontalOptions="End"
+            VerticalOptions="End"
+            Margin="0"
+            Rotation="180"
+            Grid.Column="2"/>
+
+        <!-- Frame with Grid -->
+        <Frame
+            BorderColor="Black"
+            CornerRadius="10"
+            Padding="10"
+            Margin="0,0,10,0"
+            HasShadow="False"
+            VerticalOptions="End"
+            HorizontalOptions="Start"
+            Rotation="180">
+
+            <Grid ColumnDefinitions="Auto,*,Auto">
+                <!-- Frequency Images (left Column) -->
+                <Image 
+                    x:Name="frequency_ok"
+                    Source="frequency_ok.png"
+                    HeightRequest="90"
+                    HorizontalOptions="Start"
+                    VerticalOptions="End"
+                    IsVisible="true"
+                    Grid.Column="1"/>
+                <Image 
+                    x:Name="frequency_slow"
+                    Source="frequency_slow.png"
+                    HeightRequest="90"
+                    HorizontalOptions="Start"
+                    VerticalOptions="End"
+                    IsVisible="false"
+                    Grid.Column="1"/>
+                <Image 
+                    x:Name="frequency_fast"
+                    Source="frequency_fast.png"
+                    HeightRequest="90"
+                    HorizontalOptions="Start"
+                    VerticalOptions="End"
+                    IsVisible="false"
+                    Grid.Column="1"/>
+
+                <!-- Depth Images (middle Column) -->
+                <Image 
+                    x:Name="pressharder"
+                    Source="pressharder2.png"
+                    HeightRequest="90"
+                    HorizontalOptions="Center"
+                    VerticalOptions="End"
+                    IsVisible="false"
+                    Grid.Column="0"/>
+                <Image 
+                    x:Name="release"
+                    Source="release2.png"
+                    HeightRequest="90"
+                    HorizontalOptions="Center"
+                    VerticalOptions="End"
+                    IsVisible="false"
+                    Grid.Column="0"/>
+                <Image 
+                    x:Name="depth_ok"
+                    Source="depth_ok.png"
+                    HeightRequest="90"
+                    HorizontalOptions="Center"
+                    VerticalOptions="End"                   
+                    IsVisible="true"
+                    Grid.Column="0"/>
+            </Grid>
+        </Frame>
+        
+    </Grid>
+    
+    
+    
+</ContentPage>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="PA_CPR_UI.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:PA_CPR_UI"
+    Shell.FlyoutBehavior="Flyout"
+    BackgroundColor="Purple"
+    >
+
+
+    <!-- Startpage -->
+    <FlyoutItem Title="Home / Perform CPR" Icon="home2.png">
+        <ShellContent
+            Title="Home"
+            ContentTemplate="{DataTemplate local:MainPage}"
+            Route="MainPage" />
+    </FlyoutItem>
+
+    <!-- Instruction-Video -->
+    <FlyoutItem Title="Instruction-Video" Icon="video.png">
+        <ShellContent
+            Title="Instruction-Video"
+            ContentTemplate="{DataTemplate local:InstructionVideoPage}"
+            Route="InstructionVideoPage" />
+    </FlyoutItem>
+
+    <!-- CPR Inforamtions -->
+    <FlyoutItem Title="CPR Inforamtions" Icon="cprinfos.png">
+        <ShellContent
+        Title="CPR Inforamtions"
+        ContentTemplate="{DataTemplate local:CPRInfosPage}"
+        Route="CPRInfosPage" />
+    </FlyoutItem>
+
+    <!-- About -->
+    <FlyoutItem Title="About" Icon="about.png">
+        <ShellContent
+        Title="About"
+        ContentTemplate="{DataTemplate local:AboutPage}"
+        Route="AboutPage" />
+    </FlyoutItem>
+
+    <!-- Acceleration-Sensor -->
+    <FlyoutItem Title="Acceleration-Sensor" Icon="sensor.png">
+        <ShellContent
+            Title="Acceleration-Sensor"
+            ContentTemplate="{DataTemplate local:SensorPage}"
+            Route="SensorPage" />
+    </FlyoutItem>
+
+    <!-- Language-Options -->
+    <FlyoutItem Title="Language" Icon="language.png">
+        <ShellContent
+    Title="Language"
+    ContentTemplate="{DataTemplate local:LanguagePage}"
+    Route="LanguagePage" />
+    </FlyoutItem>
+
+    <!-- Contact -->
+    <FlyoutItem Title="Contact" Icon="contact.png">
+        <ShellContent
+    Title="Contact"
+    ContentTemplate="{DataTemplate local:ContactPage}"
+    Route="ContactPage" />
+    </FlyoutItem>
+
+    <!-- Donation -->
+    <FlyoutItem Title="Donate" Icon="donation.png">
+        <ShellContent
+    Title="Donate"
+    ContentTemplate="{DataTemplate local:DonationPage}"
+    Route="DonationPage" />
+    </FlyoutItem>
+
+
+
+
+
+    <ShellItem Route="MainPage">
+        <ShellContent ContentTemplate="{DataTemplate local:MainPage}" />
+    </ShellItem>
+    <ShellContent
+    Route="ZeroPaddingAndInstructionPage"
+    ContentTemplate="{DataTemplate local:ZeroPaddingAndInstructionsPage}" />
+
+
+
+</Shell>

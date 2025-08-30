@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PA_CPR_UI.ZeroPaddingAndInstructionsPage"
+             Title="Compression Instruction"
+             Shell.NavBarIsVisible="False">
+
+
+
+
+    <ScrollView x:Name="InstructionScrollView">
+        <VerticalStackLayout Padding="15" Spacing="10">
+            <Button 
+                Text="Start Chest Compression!"
+                Clicked="OnCPRButton3Clicked"
+                BackgroundColor="Purple"
+                TextColor="White"
+                CornerRadius="8"
+                HeightRequest="75"
+                WidthRequest="300"
+                HorizontalOptions="Center"
+                Rotation="180"
+                FontSize="22"/>
+            <Label 
+                Text="• After 30 compressions, give 2 breaths (if trained), then repeat until help arrives or the person shows signs of life."
+                FontSize="20"
+                HorizontalOptions="Center"
+                Margin="0,10,0,0"
+                Rotation="180"/>
+            <Label 
+                Text="• Let the chest fully recoil between compressions"
+                FontSize="20"
+                HorizontalOptions="Center"
+                Margin="0,10,0,0"
+                Rotation="180"/>
+            <Label 
+                Text="• Press 100 to 120 times per minute (just like the rythm of Stayn' alive from Bee Gees)"
+                FontSize="20"
+                HorizontalOptions="Center"
+                Margin="0,10,0,0"
+                Rotation="180"/>
+            <Label 
+                Text="• Press with the heel of your hand 5 to 6 cm / 2 to 2.4 inches deep (little bit less than the width of your Smartphonescreen)"
+                FontSize="20"
+                HorizontalOptions="Center"
+                Margin="0,10,0,0" 
+                Rotation="180"/>
+            <Image
+                Source="handsonsmartphone2.png" 
+                HeightRequest="500" 
+                HorizontalOptions="Center"
+                Margin="0,10,0,0"
+                Rotation="180"/>
+            <Label
+                Text="• To start sensoraided chestcompression please place your hands on the smartphone as shown in the picture (after pressing the start-chest-compression-button):"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" 
+                FontSize="20"
+                Rotation="180"
+                Margin="0,0,0,0"/>
+            <Label 
+                Text="Chest Compression Instruction:"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center"
+                FontSize="22"
+                FontAttributes="Bold"
+                Rotation="180"
+                Margin="0,0,0,0"/>
+            <Button 
+                x:Name="BackButton"
+                Text="Back"
+                Clicked="OnZeroPaddingAndInstructionPageBackButtonClicked"
+                BackgroundColor="Purple"
+                TextColor="White"
+                CornerRadius="8"
+                HeightRequest="40"
+                WidthRequest="75"
+                HorizontalOptions="End"
+                VerticalOptions="Start"
+                Margin="0,30,0,0"
+                Rotation="180"/>
+        </VerticalStackLayout>
+    </ScrollView>
+
+
+
+
+
+</ContentPage>
